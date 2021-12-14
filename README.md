@@ -50,10 +50,18 @@ ip link set wlan0 down
 iwconfig wlan0 mode monitor
 ip link set wlan0 up
 ```
+或者
+```sh
+airmon-ng start wlan0
+```
 
 ### RTL8812BU 切换为 托管模式(Managed)
 ```sh
 ip link set wlan0 down
 iwconfig wlan0 mode managed
 ip link set wlan0 up
+```
+或者
+```sh
+airmon-ng stop wlan0
 ```
